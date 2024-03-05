@@ -11,17 +11,18 @@
     max-height: 150vh;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
-    "boxx1 boxx1 boxx1 box7 box7 box7 box8 box13 box13 box13"
-    "boxx1 boxx1 boxx1 box7 box7 box7 box8 box13 box13 box13"
-    "boxx1 boxx1 boxx1 box7 box7 box7 box8 box13 box13 box13"
-    "boxx1 boxx1 boxx1 box9 box9 box9 box9 box13 box13 box13"
-    "box2 box3 box3 box9 box9 box9 box9 box13 box13 box13"
-    "box4 box4 box4 box9 box9 box9 box9 box14 box15 box15"
-    "box4 box4 box4 box9 box9 box9 box9 box16 box16 box16"
-    "box5 box5 box6 box10 box11 box11 box12 box17 box17 box17" 
+    "boxx1 boxx1 boxx1 boxx1 box7 box7 box8 box8 box13 box13 box13 box13"
+    "boxx1 boxx1 boxx1 boxx1 box7 box7 box8 box8 box13 box13 box13 box13"
+    "boxx1 boxx1 boxx1 boxx1 box7 box7 box8 box8 box13 box13 box13 box13"
+    "boxx1 boxx1 boxx1 boxx1 box9 box9 box9 box9 box13 box13 box13 box13"
+    "box2 box2 box3 box3 box9 box9 box9 box9 box13 box13 box13 box13"
+    "box4 box4 box4 box4 box9 box9 box9 box9 box14 box14 box15 box15"
+    "box4 box4 box4 box4 box9 box9 box9 box9 box16 box16 box16 box16"
+    "box5 box5 box5 box6 box10 box11 box11 box12 box17 box17 box17 box17"
+     
      ;
 }
 .item__1{
@@ -129,27 +130,16 @@
 }
 
 
-
 .item__13 img{
     object-fit: cover;
 }
+
 .item__7 img{
     object-fit: cover;
 }
-.item__6 img{
-    object-fit: cover;
-}
-.item__10 img{
-    object-fit: cover;
-}
-.item__12 img{
-    object-fit: cover;
-}
+
+
+
 .item__11 img{
     object-fit: cover;
-}
-.item__9 img{
-    display: flex;
-    object-fit: contain;
-    height: 100%;
 }
