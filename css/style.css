@@ -4,93 +4,129 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: content-box;
 }
-body{
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(13, 1fr);
-}
 
 .container{
-    background: white;
+    margin: 10px;
+    background: red ;
+    width: 100%;
+    height: 130vh;
     display: grid;
-    border: 1px solid black;
-    
-   
+    grid-gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
-    "box1 box1 box1 box7 box7 box7 box8 box13 box13 box13"
-    "box1 box1 box1 box7 box7 box7 box8 box13 box13 box13"
+    "boxx1 boxx1 boxx1 box7 box7 box7 box8 box13 box13 box13"
+    "boxx1 boxx1 boxx1 box7 box7 box7 box8 box13 box13 box13"
     "box2 box3 box3 box9 box9 box9 box9 box13 box13 box13"
     "box2 box3 box3 box9 box9 box9 box9 box14 box15 box15"
     "box4 box4 box4 box9 box9 box9 box9 box16 box16 box16"
-    "box5 box5 box6 box7 box11 box11 box12 box17 box17 box17"
-    "box5 box5 box6 box7 box11 box11 box12 box17 box17 box17"
+    "box5 box5 box6 box9 box9 box9 box9 box17 box17 box17"
+    "box5 box5 box6 box10 box11 box11 box12 box17 box17 box17" 
      ;
-
-    width: 80%;
-    height: 600px;
-    margin: 10px auto;
-        
 }
 
-.container div {
-    background: red;
-}
+
 .item__1{
-    grid-area: box1;
+    grid-area: boxx1;
     background: blue;
+    place-items: center;
 }
 .item__2{
+    background: red;
     grid-area: box2;
 }
 .item__3{
     grid-area: box3;
+    background: rgb(0, 255, 21);
 }
 .item__4{
+    background: blue;
     grid-area: box4;
 }
 .item__5{
+    background: blue;
     grid-area: box5;
 }
 .item__6{
+    background: blue;
     grid-area: box6;
 }
 .item__7{
+    background:yellow; background:yellow;
     grid-area: box7;
 }
 .item__8{
+    background:yellow;
     grid-area: box8;
 }
 .item__9{
+    background:yellow;
     grid-area: box9;
 }
 .item__10{
+    background:yellow;
     grid-area: box10;
 }
 .item__11{
+    background:yellow;
     grid-area: box11;
 }
 .item__12{
+    background:yellow;
     grid-area: box12;
 }
 .item__13{
+    background:yellow;
     grid-area: box13;
 }
 .item__14{
+    background:yellow;
     grid-area: box14;
 }
 .item__15{
+    background:yellow;
     grid-area: box15;
 }
 .item__16{
+    background:yellow;
     grid-area: box16;
 }
 .item__17{
+    background:yellow;
     grid-area: box17;
 }
-.item__17 img{
+
+
+
+.item__1 img,
+.item__2 img,
+.item__3 img,
+.item__4 img,
+.item__5 img,
+.item__6 img,
+.item__7 img,
+.item__8 img,
+.item__9 img,
+.item__10 img,
+.item__11 img,
+.item__12 img,
+.item__13 img,
+.item__14 img,
+.item__15 img,
+.item__16 img,
+.item__17 img {
     width: 100%;
     height: 100%;
+    max-width: auto;
+    max-height: auto;
     object-fit: contain;
-
+    background: #e7e9e8;
+    border-radius: 10px;
 }
 
+
+@media (max-width: 800px){
+    .container img{
+        border: 3px solid red;
+    }
+}
