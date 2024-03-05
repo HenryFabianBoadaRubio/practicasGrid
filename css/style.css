@@ -4,29 +4,42 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: content-box;
 }
+body{
+    display: flex;
+    height: 113vh;
+    align-items: center;
+    justify-content: center;
+}
 
 .container{
-    margin: 10px;
-    width: 100%;
-    max-height: 150vh;
+    width: 95%;
+    height: 111vh;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     grid-template-areas: 
-    "boxx1 boxx1 boxx1 boxx1 box7 box7 box8 box8 box13 box13 box13 box13"
-    "boxx1 boxx1 boxx1 boxx1 box7 box7 box8 box8 box13 box13 box13 box13"
-    "boxx1 boxx1 boxx1 boxx1 box7 box7 box8 box8 box13 box13 box13 box13"
-    "boxx1 boxx1 boxx1 boxx1 box9 box9 box9 box9 box13 box13 box13 box13"
-    "box2 box2 box3 box3 box9 box9 box9 box9 box13 box13 box13 box13"
-    "box4 box4 box4 box4 box9 box9 box9 box9 box14 box14 box15 box15"
-    "box4 box4 box4 box4 box9 box9 box9 box9 box16 box16 box16 box16"
-    "box5 box5 box5 box6 box10 box11 box11 box12 box17 box17 box17 box17"
+    "box1 box1 box1 box1 box1 box1 box7 box7 box7 box7 box7 box8 box8 box8 box13 box13 box13 box13 box13 box13"
+    "box1 box1 box1 box1 box1 box1 box7 box7 box7 box7 box7 box8 box8 box8 box13 box13 box13 box13 box13 box13"
+    "box1 box1 box1 box1 box1 box1 box7 box7 box7 box7 box7 box8 box8 box8 box13 box13 box13 box13 box13 box13"
+    "box1 box1 box1 box1 box1 box1 box7 box7 box7 box7 box7 box8 box8 box8 box13 box13 box13 box13 box13 box13"
+    "box1 box1 box1 box1 box1 box1 box9 box9 box9 box9 box9 box9 box9 box9 box13 box13 box13 box13 box13 box13"
+    "box2 box2 box2 box3 box3 box3 box9 box9 box9 box9 box9 box9 box9 box9 box13 box13 box13 box13 box13 box13"
+    "box2 box2 box2 box3 box3 box3 box9 box9 box9 box9 box9 box9 box9 box9 box14 box14 box14 box15 box15 box15"
+    "box2 box2 box2 box3 box3 box3 box9 box9 box9 box9 box9 box9 box9 box9 box14 box14 box14 box15 box15 box15"
+    "box2 box2 box2 box3 box3 box3 box9 box9 box9 box9 box9 box9 box9 box9 box14 box14 box14 box15 box15 box15" 
+    "box4 box4 box4 box4 box4 box4 box9 box9 box9 box9 box9 box9 box9 box9 box16 box16 box16 box16 box16 box16"
+    "box4 box4 box4 box4 box4 box4 box9 box9 box9 box9 box9 box9 box9 box9 box16 box16 box16 box16 box16 box16"
+    "box4 box4 box4 box4 box4 box4 box9 box9 box9 box9 box9 box9 box9 box9 box16 box16 box16 box16 box16 box16"
+    "box5 box5 box5 box5 box6 box6 box10 box10 box11 box11 box11 box11 box12 box12 box17 box17 box17 box17 box17 box17"
+    "box5 box5 box5 box5 box6 box6 box10 box10 box11 box11 box11 box11 box12 box12 box17 box17 box17 box17 box17 box17"
+    "box5 box5 box5 box5 box6 box6 box10 box10 box11 box11 box11 box11 box12 box12 box17 box17 box17 box17 box17 box17"
+    "box5 box5 box5 box5 box6 box6 box10 box10 box11 box11 box11 box11 box12 box12 box17 box17 box17 box17 box17 box17"
      
      ;
 }
 .item__1{
-    grid-area: boxx1;
+    grid-area: box1;
     
     place-items: center;
 }
@@ -123,10 +136,11 @@
 }
 
 
+
 @media (width< 800px){
     .container{
         grid-template-areas: 
-        "boxx1"
+        "box1"
         "box2"
         "box3"
         "box4"
