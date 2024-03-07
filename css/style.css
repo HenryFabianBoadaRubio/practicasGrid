@@ -15,22 +15,25 @@ body{
     grid-template-areas: 
    "MacBookAir MacBookProApp MacBookProApp"
    "MacBookAir MacBookProApp MacBookProApp"
-   "MacBookAirScreen MacBookAirScreen MacbookPro"
-   "MacBookAirScreen MacBookAirScreen MacbookPro";
+   "MacBookAirScreen MacBookAirScreen MackBookPro"
+   "MacBookAirScreen MacBookAirScreen MackBookPro";
     grid-gap: 8px;
     width: 800px;
-    height: 700px;
+    height: 850px;
     margin: 15px auto;
 }
 .container div{
     background: var(--color-secundary);
     border-radius: 10px;
+    border: 1px solid var(--color-secundary);
 }
 .item__1{
     grid-area:MacBookAir;
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-gap: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    padding: 20px;
 }
 .item__1 img{
     width: 100%;
@@ -43,23 +46,93 @@ body{
     color: var(--color-title);
 }
 .price{
-    font-size: 1.1rem;
+    width: 70%;
+    margin-top: 1rem;
+    font-size: 0.8rem;
     text-align: center;
+}
+.item__1 .color1,
+.item__4 .color2{        
+    width: 30%;
+    height: 20%;
+    object-fit: contain;
 }
 .item__2{
     grid-area: MacBookProApp;
+    display: flex;
+    flex-direction: column;  
+    position: relative;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
+}
+.item__2 img{
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 17%;
+   
 }
 .item__3{
     grid-area: MacBookAirScreen;
+    display: flex;
+    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    
+}
+.item__3 img{        
+    width: 100%;
+    height: 38vh;
+    object-fit: contain;
 }
 .item__4{
     grid-area: MackBookPro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    padding: 20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    
 }
+.item__4 img{        
+    width: 100%;
+    height: 25vh;
+    object-fit: contain;
+    
+}
+.item__4 .titured{
+    margin-top: 1rem;
+}
+
+.item__1 .titured,
+.item__4 .titured{
+    color:brown;
+    font-size: 0.8rem;
+}
+
+.item__1 .texgrey,
+.item__4 .texgrey{
+    font-size: 0.76rem;
+    color: grey;
+}
+
+.item__2 .mbook,
+.item__3 .mbook{
+    height: 1%;
+    padding: 1.5rem;
+}
+
+.item__2 .texbig{
+    width: 30%;
+}
+.item__2 .texbig,
+.item__3 .texbig{
+   font-size: 1.4rem;
+   margin-left: 1.5rem;
+}
+
 @media (width <800px){
     .container{
         width: 100%;
-        grid-template-areas: 
+        /* grid-template-areas; */
         
     }
 
