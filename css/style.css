@@ -134,13 +134,30 @@ body{
 
 @media (width <800px){
     .container{
-        width: 100%;
-        /* grid-template-areas; */
-        
+        width: 92%;
+        height: auto;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4,1fr);
+        padding: 16px;
+        grid-template-areas:
+            "MacBookAir"
+            "MacBookProApp"
+            "MacBookAirScreen"
+            "MackBookPro" 
+            ; 
     }
-
-
-
-
-}
     
+    .item__2 img {
+        
+        object-fit: contain;
+        width: 80%;
+    }
+}
+
+ 
+/* 
+.item__1 {
+        justify-content: center;
+    } */
+
+
